@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرحبا بكم</title>
+
+
+    <link rel="icon" href="img/icon.png">
+
+
+
+
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+         <!-- File CSS -->
+         <link rel="stylesheet" href="CSS/style.css">
+    </head>
+<body>
+
+
+    <div class="cart">
+        <div class="top_cart">
+            <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+        <div class="items_in_cart" id="cart_items">
+
+
+
+        </div>
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>المجموع الفرعي</p>
+                <p class="price_cart_toral">$0</p>
+            </div>
+
+            <div class="button_cart">
+                <a href="#" class="btn_cart btn">خروج</a>
+                <span onclick="open_close_cart()" class="btn_cart trans_bg btn">تسوق المزيد</span>
+            </div>
+        </div>
+
+    </div>
+
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="#" class="logo"> <img src="img/logo.png" alt=""></a>
+
+                <form action="" class="search_box">
+
+                    <div class="select_box">
+                        <select id="category" name="category">
+
+                            <option value="All Categories">كل الفئات</option>
+                            <option value="Electronics & Digita">الكترونيات</option>
+                            <option value="Phones & Tablet">Phones & Tablety</option>
+                            <option value="Fashion & Clothings">ملابس</option>
+                            <option value="Telivsion & Monitor">الشاشات والتلفزيون</option>
+                            <option value="Jewelry & Watches">
+                       مجوهرات </option>
+                            <option value="Washing Machine">غسالة ملابس</option>
+                            <option value="Toys & Hobbies">الالعاب والهوايات</option>
+
+                        </select>
+                    </div>
+
+                    <input type="text" name="search" id="search" placeholder="Search for Products" required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    
+
+                </form>
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a>
+                    </div>
+
+                    <div onclick="open_close_cart()" class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+                    <div class="category_nav">
+
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p> تصفح</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+
+
+                        <div class="category_nav_list">
+                            <a href="#">أفضل١٠عروض</a>
+                            <a href="#">الكترونيات</a>
+                            <a href="#">هواتف</a>
+                            <a href="#">Fashion & Clothings</a>
+                            <a href="#">مش عارف</a>
+                            <a href="#">Jewelry & Watches</a>
+                            <a href="#">Toys & Hobbies</a>
+                        </div>
+
+                    </div>
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="active"><a href="#">الصفحة الرئيسية</a></li>
+                        <li><a href="#">عن</a></li>
+                        <li><a href="#">اكسسوارات</a></li>
+                        <li><a href="#">مدونة</a></li>
+                        <li><a href="#">الاتصال</a></li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="login_signup btns">
+                    <a href="#" class="btn">Login  <i class="fa-solid fa-right-to-bracket"></i></a>
+
+                    <a href="#" class="btn">Sign UP <i class="fa-solid fa-user-plus"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </header>
+
+
+    <div class="slider">
+        <div class="container">
+
+
+            <!-- Swiper -->
+            <div class="slide-swp mySwiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/banner_home1.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/banner_home2.png" alt=""></a>
+                    </div>
+
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+
+            <div class="banner_2">
+                <a href="#"><img src="img/banner_home3.png" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="banners_4">
+        <div class="container">
+
+
+            <div class="box">
+                <a href="#" class="link_btn"></a>
+
+                <img src="img/banner3_1.png" alt="">
+                <div class="text">
+                    <h5>قرس الاستراحة</h5>
+                    <h5>عروض على هذا المنتج</h5>
+
+                    <div class="sale">
+                        <p>Up <br> To</p>
+                        <span>70%</span>
+                    </div>
+
+                    <h6>Shop Now</h6>
+
+                </div>
+            </div>
+
+
+            
+            <div class="box">
+                <a href="#" class="link_btn"></a>
+
+                <img src="img/banner3_2.png" alt="">
+                <div class="text">
+                    <h5>Break Disc</h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                        <p>Up <br> تصل حتى</p>
+                        <span>70%</span>
+                    </div>
+
+                    <h6>تسوق الآن</h6>
+
+                </div>
+            </div>
+
+
+            
+            <div class="box">
+                <a href="#" class="link_btn"></a>
+
+                <img src="img/banner3_3.png" alt="">
+                <div class="text">
+                    <h5>٢٠غير معروف</h5>
+                    <h5>٢١غيرمعروف</h5>
+                    <div class="sale">
+                        <p>Up <br> To</p>
+                        <span>70%</span>
+                    </div>
+
+                    <h6>Shop Now</h6>
+
+                </div>
+            </div>
+
+
+            
+            <div class="box">
+                <a href="#" class="link_btn"></a>
+
+                <img src="img/banner3_4.png" alt="">
+                <div class="text">
+                    <h5>Break Disc</h5>
+                    <h5>deals on this</h5>
+                    <div class="sale">
+                        <p>Up <br> To</p>
+                        <span>70%</span>
+    
+                    </div>
+                    <h6>تسوق الآن</h6>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>عروض مميزة</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="swiper_items_sale">
+
+             
+                   
+
+
+
+                </div>
+                
+
+
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="banners">
+        <div class="container">
+            <div class="banners_boxs banner_2_img">
+                <a href="#" class="box"><img src="img/banner_box4.jpg" alt=""></a>
+                <a href="#" class="box"><img src="img/banner_box5.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الكترونيات</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="swiper_elctronics">
+
+             
+                   
+
+
+
+                </div>
+                
+
+
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الاجهزة</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="swiper_appliances">
+
+             
+                   
+
+
+
+                </div>
+                
+
+
+                <div class="swiper-button-next btn_Swip"></div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="banners">
+        <div class="container">
+            <div class="banners_boxs banner_3_img">
+                <a href="#" class="box"><img src="img/banner_box1.jpg" alt=""></a>
+                <a href="#" class="box"><img src="img/banner_box2.jpg" alt=""></a>
+                <a href="#" class="box"><img src="img/banner_box3.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2><i class="fa-solid fa-tags"></i>الهواتف المحمولة</h2>
+                </div>
+                
+                <div class="products swiper-wrapper" id="swiper_mobiles">
+
+             
+                   
+
+
+
+                </div>
+                
+
+
+                <div class="swiper-button-next btn_Swip">عرض من الموت</div>
+                <div class="swiper-button-prev btn_Swip"></div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="container">
+
+            <div class="big_row">
+                <img class="logo_footer" src="img/white_logo.png" alt="">
+
+                <p>عنوان ننتج٩٠</p>
+
+                <div class="icons_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Find It Fast</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Laptops & Computers </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Smart Phones & Tablets</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> TV & Audio</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Appliances</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Jewelry & Watches</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Quick Links</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase Hisotry</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Service us</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>Reda Store.</span> All Rights Reserved.</p>
+
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+       <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- File JS -->
+     
+      <script src="JS/swiper.js"></script>
+      <script src="JS/items_home.js"></script>
+      <script src="JS/main.js"></script>
+
+<!-- Seller widget: floating button + modal -->
+<link rel="stylesheet" href="CSS/seller-widget.css">
+<div id="sellerFloatingBtn" class="seller-floating-btn" title="عرض منتج">
+  <i class="fa-solid fa-plus"></i>
+  <span>عرض منتج</span>
+</div>
+
+<div id="sellerModal" class="seller-modal" aria-hidden="true">
+  <div class="seller-modal-backdrop" id="sellerBackdrop"></div>
+  <div class="seller-modal-panel" role="dialog" aria-modal="true" aria-labelledby="sellerTitle">
+    <header class="seller-modal-header">
+      <h2 id="sellerTitle">نشر منتجك</h2>
+      <button id="closeSellerModal" class="close-modal" aria-label="إغلاق">&times;</button>
+    </header>
+
+    <form id="sellerForm" class="seller-form">
+      <div class="form-row">
+        <label>اسم البائع</label>
+        <input type="text" id="sellerName" required placeholder="اسم البائع">
+      </div>
+
+      <div class="form-row">
+        <label>وصف المنتج</label>
+        <textarea id="productDesc" rows="3" required placeholder="اكتب وصفاً موجزاً"></textarea>
+      </div>
+
+      <div class="form-row two-cols">
+        <div>
+          <label>الموقع</label>
+          <input type="text" id="productLocation" placeholder="المدينة / العنوان">
+        </div>
+        <div>
+          <label>رقم الهاتف</label>
+          <input type="tel" id="productPhone" placeholder="+20XXXXXXXXX">
+        </div>
+      </div>
+
+      <div class="form-row two-cols">
+        <div>
+          <label>واتس اب</label>
+          <input type="tel" id="productWhatsapp" placeholder="+20XXXXXXXXX">
+        </div>
+        <div>
+          <label>يمكن الاتصال؟</label>
+          <select id="productCall">
+            <option value="call">مكالمة</option>
+            <option value="no">لا</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>صور المنتج (اختياري - اسحب لليسار/اليمين لمعاينة)</label>
+        <input type="file" id="productImages" accept="image/*" multiple>
+        <div id="imagePreview" class="image-preview" tabindex="0" aria-label="معاينة الصور"></div>
+      </div>
+
+      <div class="form-row">
+        <label>تاريخ النشر (يتم تعبئته تلقائياً)</label>
+        <input type="text" id="publishDate" readonly>
+      </div>
+
+      <div class="form-row">
+        <label>تاريخ الانتهاء (بعد ٣ أشهر)</label>
+        <input type="text" id="expireDate" readonly>
+      </div>
+
+      <div class="form-row actions">
+        <button type="submit" class="btn">نشر المنتج</button>
+        <button type="button" id="clearForm" class="btn trans_bg">مسح</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Where user-submitted products will appear -->
+<section id="user_products" class="user-products container" aria-live="polite"></section>
+
+<script src="JS/seller-widget.js" defer></script>
+
+</body>
+</html>
